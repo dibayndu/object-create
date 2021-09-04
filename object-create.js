@@ -1,17 +1,14 @@
-//1. using object literal
-const student = { name: 'Dibayndu Das', job: 'Student', salary: '20000' };
-
-// 2.constructor
+// 1. using object literal
+const student = { name: 'Sakib AL Hasan', job: 'cricketer' };
+// 2. constructor
 const person = new Object();
-console.log(person);
 
-// 3.
+// 3. 
 // const human = Object.create(null);
-// console.log(human);
 const human = Object.create(student);
-console.log(human.salary);
+// console.log(human.job);
 
-// sytectical suger
+// 4. class
 class People {
     constructor(name, age) {
         this.name = name;
@@ -19,9 +16,9 @@ class People {
     }
 }
 const peop = new People('Manus', 12);
-console.log(peop);
+// console.log(peop);
 
-// function
+// 5. function
 function Manus(name) {
     this.name = name;
 }
